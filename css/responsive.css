@@ -108,6 +108,7 @@
 @media (max-width: 576px) {
     .container {
         width: 100% !important;
+        padding: 0 15px;
     }
     .box {
         width: 100% !important;
