@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="img/restaurantfavicon-2-dynamite-weapon.jpg">
+
+
+</head>
+
+<body>
+
+    <!-- =============== header-section-start ===============  -->
+    <div class="hero">
+
+
+
+        <header>
+            <div class="w-100">
+                <div class="container">
+                    <div class="d-flex">
+                        <div class="w-20">
+                            <div class="logo">
+                                <h2 class="font-f">Restro</h2>
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <div class="navbar">
+                                <ul class="d-flex">
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="menu.html">MENU</a></li>
+                                    <li><a href="about.html">ABOUT</a></li>
+                                    <li><a href="book-table.html">BOOK TABLE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="w-30 d-flex">
+                            <div class="icons ">
+                                <i class="fa-solid fa-user"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="btn">
+                                <a href="">ORDER ONLINE</a>
+                            </div>
+                        </div>
+                        <div class="hide-navbar">
+                            <ul class="d-flex">
+                                <li><a href="">HOME</a></li>
+                                <li><a href="">MENU</a></li>
+                                <li><a href="">ABOUT</a></li>
+                                <li><a href="">BOOK TABLE</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="icone">
+
+                            <i class="fa-solid fa-bars f-16 color" id="bar" onclick="on()"></i>
+                            <i class="fa-solid fa-xmark f-16 color" id="x-mark" onclick="off()"></i>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- =============== header-section-end ===============  -->
+
+     <!-- ========= foood section =============  -->
+
+  <div class="food-section w-100">
+    <div class="container">
+      <div class="main-class text-center">
+        <h1 class="font-f">Our Menu</h1>
+
+      </div>
+      <div class="sotting text-center">
+        <ul class="flex">
+          <li onclick="al()">All</li>
+          <li onclick="Br()">Burger</li>
+          <li onclick="Pz()">Pizza </li>
+          <li onclick="Pa()">Pasta</li>
+          <li onclick="Fs()">Fries</li>
+        </ul>
+      </div>
+      <div class="filters-content">
+        <div class="flex">
+          <div class="box" id="pizza">
+            <div class="img-box">
+              <img src="./img/f1.png " width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Delicious Pizza</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$20</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="burger">
+            <div class="img-box">
+              <img src="./img/f2.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Delicious Burger</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$15</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="pizza">
+            <div class="img-box">
+              <img src="./img/f3.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Delicious Pizza</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$17</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="pasta">
+            <div class="img-box">
+              <img src="./img/f4.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Delicious Pasta</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$18</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="fries">
+            <div class="img-box">
+              <img src="./img/f5.png" alt="" width="50%" id="Pizza">
+            </div>
+            <div class="detail-box">
+              <h3>French Fries</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$10</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="pizza">
+            <div class="img-box">
+              <img src="./img/f6.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Delicious Pizza</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$15</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="burger">
+            <div class="img-box">
+              <img src="./img/f7.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Tasty Burger</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$12</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="burger">
+            <div class="img-box">
+              <img src="./img/f8.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Tasty Burger</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$14</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="box" id="pasta">
+            <div class="img-box">
+              <img src="./img/f9.png" alt="" width="50%">
+            </div>
+            <div class="detail-box">
+              <h3>Delicious Pasta</h3>
+              <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed
+                eaque</p>
+              <div class="options">
+                <h6>$10</h6>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="btn">
+          <a href="">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========= foood section end =============  -->
+   
+
+  <!-- ================ footer-section-start =======================  -->
+
+  <div class="footer-section">
+    <div class="container">
+      <div class="main-footer">
+        <div class="fotter1">
+          <div class="fotter-contact">
+            <h1 class="font-f">Contact Us</h1>
+            <div class="contact">
+              <a href=""><i class="fa-solid fa-location-dot"></i><span>Location</span></a>
+              <a href=""><i class="fa-solid fa-phone"></i><span>call +01 123456789</span></a>
+              <a href=""><i class="fa-solid fa-envelope"></i><span>demo@gmail.com</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="fotter1">
+          <div class="fotter-contact">
+            <h1 class="font-f">Restro</h1>
+            <p class="text-light">Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin
+              words, combined with</p>
+            <div class="contact-2">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-pinterest-p"></i>  
+            </div>
+          </div>
+        </div>
+        <div class="fotter1">
+          <div class="fotter-contact">
+            <h1 class="font-f">Opening Hours
+            </h1>
+            <div class="fr">
+            <p class="text-light">Everyday</p>
+            <p class="text-light">10.00 Am -10.00 Pm</p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="copy">
+        <p>© 2024 All Rights Reserved By Free Html Templates</p>
+        <p>© Distributed By ThemeWagon</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================ footer-section-end =======================  -->
+</body>
+
+</html>
